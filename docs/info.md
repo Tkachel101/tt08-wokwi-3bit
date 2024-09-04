@@ -14,7 +14,7 @@ The instruction is made up of 8 total bits.
 
 Bits 0 and 1 make up the operation code. Operations are according to the following table.
 
-<img width="176" alt="OPBits" src="OPBits.png">
+![OP Bit Table](OPBits.png "OP Bits")
 
 Bits 2, 3, and 4 make up operand A. Bit 2 is MSB and bit 4 is LSB.
 
@@ -22,7 +22,7 @@ Bits 5, 6, and 7 make up operand B. Bit 5 is MSB and bit 7 is LSB.
 
 A full operation would be decoded like this
 
-<img width="443" alt="fullop" src="fullop.png">
+![OP Decoding](fullop.png "OP Decoding")
 
 ## How to test
 
@@ -33,6 +33,7 @@ A full operation would be decoded like this
    Note: An overflow condition during an add operation will illumniate the 7 segment display's DP.
 
 Examples:
+
 1. 0 0 1 0 0 0 0 1 -> ADD 4, 1 -> Displays 5 on 7-Segment Display
    
 2. 1 1 1 0 0 1 0 1 -> XOR 4, 5 -> Displays 1 on 7-Segment Display
