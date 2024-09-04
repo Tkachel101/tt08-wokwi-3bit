@@ -3,7 +3,7 @@ project:
   wokwi_id:     407760296956596225       # Set this to the ID of your Wokwi project (the number from the project's URL)
   title:        "tt08-octal-alu"      # Project title
   author:       "Theo Kachelski"      # Your name
-  discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
+  discord:      "theok_86185"      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "Executes binary operations on two octal numbers encoded in an 8-bit instruction and outputs the result to the 7-segment display."      # One line description of what your project does
   language:     "Wokwi" # other examples include SystemVerilog, Amaranth, VHDL, etc
   clock_hz:     0       # Clock frequency in Hz (or 0 if not applicable)
