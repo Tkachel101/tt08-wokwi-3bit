@@ -13,21 +13,16 @@ This design executes binary operations on two octal numbers encoded in an 8-bit 
 The instruction is made up of 8 total bits.  
 
 Bits 0 and 1 make up the operation code. Operations are according to the following table.
-| Bit 0 | Bit 1 | Operation |
-| -------- | ------- | ------- |
-| 0 | 0 | ADD |
-| 0 | 1 | OR |
-| 1 | 0 | AND |
-| 1 | 1 | XOR |
+
+<img width="176" alt="OPBits" src="https://github.com/user-attachments/assets/c183dac4-1556-4ab2-ab8b-62d183c685fb">
 
 Bits 2, 3, and 4 make up operand A. Bit 2 is MSB and bit 4 is LSB.
 
 Bits 5, 6, and 7 make up operand B. Bit 5 is MSB and bit 7 is LSB.
 
 A full operation would be decoded like this
-|Bit|0|1|2|3|4|5|6|7|
-|---|---|---|---|---|---|---|---|---|
-|Decoded|OP1|OP2|A(MSB)|A|A(LSB)|B(MSB)|B|B(LSB)|
+
+<img width="443" alt="fullop" src="https://github.com/user-attachments/assets/ba99f5a0-122f-44c4-a9bf-80658c019b46">
 
 ## How to test
 
@@ -38,11 +33,11 @@ A full operation would be decoded like this
    Note: An overflow condition during an add operation will illumniate the 7 segment display's DP.
 
 Examples:
-- 0 0 1 0 0 0 0 1 -> ADD 4, 1 -> Displays 5 on 7-Segment Display
-- 1 1 1 0 0 1 0 1 -> XOR 4, 5 -> Displays 1 on 7-Segment Display
-- 1 0 1 0 0 1 0 1 -> AND 4, 5 -> Displays 4 on 7-Segment Display
-- 0 1 1 1 0 1 0 1 -> OR  6, 5 -> Displays 7 on 7-Segment Display
-- 0 0 1 0 1 1 1 0 -> ADD 5, 6 -> 7-Segment Display DP illuminated indicating overflow condition
+1. 0 0 1 0 0 0 0 1 -> ADD 4, 1 -> Displays 5 on 7-Segment Display
+2. 1 1 1 0 0 1 0 1 -> XOR 4, 5 -> Displays 1 on 7-Segment Display
+3. 1 0 1 0 0 1 0 1 -> AND 4, 5 -> Displays 4 on 7-Segment Display
+4. 0 1 1 1 0 1 0 1 -> OR  6, 5 -> Displays 7 on 7-Segment Display
+5. 0 0 1 0 1 1 1 0 -> ADD 5, 6 -> 7-Segment Display DP illuminated indicating overflow condition
 
 ## External hardware
 
