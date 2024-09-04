@@ -34,9 +34,13 @@ A full operation would be decoded like this
 
 Examples:
 1. 0 0 1 0 0 0 0 1 -> ADD 4, 1 -> Displays 5 on 7-Segment Display
+   
 2. 1 1 1 0 0 1 0 1 -> XOR 4, 5 -> Displays 1 on 7-Segment Display
+   
 3. 1 0 1 0 0 1 0 1 -> AND 4, 5 -> Displays 4 on 7-Segment Display
+
 4. 0 1 1 1 0 1 0 1 -> OR  6, 5 -> Displays 7 on 7-Segment Display
+
 5. 0 0 1 0 1 1 1 0 -> ADD 5, 6 -> 7-Segment Display DP illuminated indicating overflow condition
 
 ## External hardware
