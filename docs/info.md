@@ -14,7 +14,7 @@ The instruction is made up of 8 total bits.
 
 Bits 0 and 1 make up the operation code. Operations are according to the following table.
 
-<img width="176" alt="OPBits" src="https://github.com/user-attachments/assets/c183dac4-1556-4ab2-ab8b-62d183c685fb">
+<img width="176" alt="OPBits" src="OPBits.png">
 
 Bits 2, 3, and 4 make up operand A. Bit 2 is MSB and bit 4 is LSB.
 
@@ -22,7 +22,7 @@ Bits 5, 6, and 7 make up operand B. Bit 5 is MSB and bit 7 is LSB.
 
 A full operation would be decoded like this
 
-<img width="443" alt="fullop" src="https://github.com/user-attachments/assets/ba99f5a0-122f-44c4-a9bf-80658c019b46">
+<img width="443" alt="fullop" src="fullop.png">
 
 ## How to test
 
